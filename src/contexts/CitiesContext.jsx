@@ -49,16 +49,32 @@ function CitiesProvider({ children }) {
         },
       });
       const data = await res.json();
-      console.log(data);
+      
       setCities(cities=>[...cities,data])
     } catch {
-      alert("There was an error loading data...");
+      alert("There was an error creating data...");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+       
+      });
+      
+      setCities(cities=>cities.filter((city)=>city.id !== id))
+    } catch {
+      alert("There was an error deleting data...");
     } finally {
       setIsLoading(false);
     }
   }
   return (
-    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity , createCity}}>
+    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity , createCity,deleteCity}}>
       {children}
     </CitiesContext.Provider>
   );
