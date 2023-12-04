@@ -11,16 +11,37 @@ import { useUrlPosition } from "../hooks/useUrlPosition";
 import Message from "./Message";
 import Spinner from "./Spinner";
 import DatePicker from "react-datepicker";
+import { useCities } from "../contexts/CitiesContext";
+
+
+const flagemojiToPNG = (flag) => {
+  var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt())
+    .map((char) => String.fromCharCode(char - 127397).toLowerCase())
+    .join("");
+  return (
+    <img src={`https://flagcdn.com/24x18/${countryCode}.png`} alt="flag" />
+  );
+};
+
+export function convertToEmoji(countryCode) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split("")
+    .map((char) => 127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
+}
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 function Form() {
   const [lat, lng] = useUrlPosition();
+  const {createCity} = useCities();
   const navigate = useNavigate();
   const [isLoadingGeocoding, setIsLoadingGeocoding] = useState(false);
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
+  const [emoji, setEmoji] = useState("");
   const [geocodingError, setGeocodingError] = useState("");
 
   useEffect(() => {
@@ -42,6 +63,7 @@ function Form() {
 
         setCityName(data.city || data.locality || "");
         setCountry(data.countryName);
+        setEmoji(convertToEmoji(data.countryCode));
       } catch (err) {
         setGeocodingError(err.message);
       } finally {
@@ -60,10 +82,11 @@ function Form() {
       cityName,
       country,
       date,
+      emoji,
       notes,
       position:{lat,lng},
     }
-    console.log(newCity);
+    createCity(newCity)
   }
 
   if (isLoadingGeocoding) return <Spinner />;
@@ -80,7 +103,7 @@ function Form() {
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
         />
-        {/* <span className={styles.flag}>{emoji}</span> */}
+        <span className={styles.flag}>{emoji ? flagemojiToPNG(emoji) : ""}</span>
       </div>
 
       <div className={styles.row}>

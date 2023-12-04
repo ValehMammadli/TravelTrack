@@ -71,7 +71,7 @@ function Map() {
             position={[city.position.lat, city.position.lng]}
           >
             <Popup>
-              <span>{flagemojiToPNG(city.emoji)}</span>{" "}
+              <span>{city.emoji ? flagemojiToPNG(city.emoji) : ""}</span>{" "}
               <span>{city.cityName}</span>
             </Popup>
           </Marker>
