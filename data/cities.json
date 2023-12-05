@@ -1,150 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
-    },
-    {
-      "cityName": "Zaragoza",
-      "country": "Spain",
-      "date": "2023-12-04T08:06:30.809Z",
-      "emoji": "🇪🇸",
-      "notes": "dscdscf",
-      "position": {
-        "lat": "41.7021510374516",
-        "lng": "-0.81298828125"
-      },
-      "id": 98443210
-    },
-    {
-      "cityName": "Kampen",
-      "country": "Netherlands (the)",
-      "date": "2023-12-04T08:09:15.226Z",
-      "emoji": "🇳🇱",
-      "notes": "ffef",
-      "position": {
-        "lat": "52.58607726324003",
-        "lng": "5.976562500000001"
-      },
-      "id": 98443211
-    },
-    {
-      "cityName": "Timokten",
-      "country": "Algeria",
-      "date": "2023-12-04T08:09:15.226Z",
-      "emoji": "🇩🇿",
-      "notes": "ffef",
-      "position": {
-        "lat": "27.81915060773985",
-        "lng": "0.8789062500000001"
-      },
-      "id": 98443212
-    },
-    {
-      "cityName": "Muntanyola",
-      "country": "Spain",
-      "date": "2023-12-04T08:09:15.226Z",
-      "emoji": "🇪🇸",
-      "notes": "ffef",
-      "position": {
-        "lat": "41.89662363376124",
-        "lng": "2.1972656250000004"
-      },
-      "id": 98443213
-    },
-    {
-      "cityName": "Vyalikaye Mazheykava",
-      "country": "Belarus",
-      "date": "2023-12-04T08:17:57.106Z",
-      "emoji": "🇧🇾",
-      "notes": "fdaddfd",
-      "position": {
-        "lat": "53.62940394411652",
-        "lng": "24.80712890625"
-      },
-      "id": 98443214
-    },
-    {
-      "cityName": "Pujo-le-Plan",
-      "country": "France",
-      "date": "2023-12-04T17:14:36.522Z",
-      "emoji": "🇫🇷",
-      "notes": "dds",
-      "position": {
-        "lat": "43.86678808907621",
-        "lng": "-0.3255998452409093"
-      },
-      "id": 98443215
-    },
-    {
-      "cityName": "Loupfougeres",
-      "country": "France",
-      "date": "2023-12-04T17:14:36.522Z",
-      "emoji": "🇫🇷",
-      "notes": "ddsdw",
-      "position": {
-        "lat": "48.327339552353024",
-        "lng": "-0.3471930044465"
-      },
-      "id": 98443216
-    },
-    {
-      "cityName": "Wargrave",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "date": "2023-12-04T17:16:48.957Z",
-      "emoji": "🇬🇧",
-      "notes": "sdadq",
-      "position": {
-        "lat": "51.53661073370163",
-        "lng": "-0.875254600144564"
-      },
-      "id": 98443217
-    },
-    {
-      "cityName": "Coalville",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "date": "2023-12-04T17:25:12.940Z",
-      "emoji": "🇬🇧",
-      "notes": "asadd",
-      "position": {
-        "lat": "52.71069108768325",
-        "lng": "-1.5346215517397146"
-      },
-      "id": 98443218
-    },
-    {
       "cityName": "Valle de Echo",
       "country": "Spain",
       "date": "2023-12-04T19:18:16.388Z",
@@ -155,6 +11,30 @@
         "lng": "-0.7437307694698282"
       },
       "id": 98443219
+    },
+    {
+      "cityName": "I-n-Amguel",
+      "country": "Algeria",
+      "date": "2023-12-05T10:29:50.996Z",
+      "emoji": "🇩🇿",
+      "notes": "talislara olumn",
+      "position": {
+        "lat": "25.201242571273152",
+        "lng": "3.4400616505029378"
+      },
+      "id": 98443220
+    },
+    {
+      "cityName": "Mezieres-en-Brenne",
+      "country": "France",
+      "date": "2023-12-05T10:36:42.755Z",
+      "emoji": "🇫🇷",
+      "notes": "sds",
+      "position": {
+        "lat": "46.81553399800062",
+        "lng": "1.288883974828301"
+      },
+      "id": 98443221
     }
   ]
 }
