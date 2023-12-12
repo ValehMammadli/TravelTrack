@@ -35,6 +35,42 @@
         "lng": "1.288883974828301"
       },
       "id": 98443221
+    },
+    {
+      "cityName": "Aldeanueva de Ebro",
+      "country": "Spain",
+      "date": "2023-12-12T12:31:01.204Z",
+      "emoji": "🇪🇸",
+      "notes": "ddd",
+      "position": {
+        "lat": "42.219584287745704",
+        "lng": "-1.9116210937500002"
+      },
+      "id": 98443222
+    },
+    {
+      "cityName": "les Avellanes i Santa Linya",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-12-12T12:47:31.517Z",
+      "notes": "dsds",
+      "position": {
+        "lat": "41.903405414028036",
+        "lng": "0.7854745001996789"
+      },
+      "id": 98443223
+    },
+    {
+      "cityName": "Baku",
+      "country": "Azerbaijan",
+      "date": "2023-12-12T14:58:14.934Z",
+      "emoji": "🇦🇿",
+      "notes": "cdcd",
+      "position": {
+        "lat": "40.44361077274749",
+        "lng": "49.83398437500001"
+      },
+      "id": 98443224
     }
   ]
 }
